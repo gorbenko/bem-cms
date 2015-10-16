@@ -1,7 +1,11 @@
 extends layout
 
 block content
+  script(src='/js/index.js')
+  script(src='/js/lib/moment.min.js')
   h1= title
   textarea(class='message')
+   |Hello World!
   br
-  input(type='button', value='send')
+  input(type='button', value='send', class='btn-send')
+  ul.messages
